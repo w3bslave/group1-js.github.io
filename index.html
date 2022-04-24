@@ -1,29 +1,290 @@
-<!DOCTYPE html>
-<html> 
+<!DOCTYPE HTML>
+<html>
+
 <head>
-<meta charset=utf-8 />
-<title>Meme Generator using JavaSript</title>
-<link rel="stylesheet" href="meme.css" /> 
+	<title>Meme Generator Submitted by Group 1</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body>
-    <p>
-        <textarea id="top-text"></textarea>
-        Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
-    </p>
-    <p>
-        <textarea id="bottom-text"></textarea>
-        Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
-    </p>
-    <p>
-        <input type="file" id="image-input" accept="image/*">
-    </p>
-    <p>
-        <button id="generate-btn">Generate!</button>
-    </p>
-    <p>
-        <canvas id="meme-canvas" title="Right click -> &quot;Save image as...&quot;"></canvas>
-        <script src="meme.js"></script>
-    </p>
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+		<!-- Header -->
+		<section id="header">
+			<!-- Logo -->
+			<h1><a href="index.html"><img src="images/logo.png"></a></h1>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+					<li class="current"><a href="#creatememe">Create Meme</a></li>
+				</ul>
+			</nav>
+
+			<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>A FINAL PROJECT FOR FRONTEND DEVELOPMENT 2</h2>
+					<p>WINTER 2022</p>
+				</header>
+			</section>
+
+			<!-- Intro -->
+			<section id="intro" class="container">
+				<div class="row">
+					<div class="col-4 col-12-medium">
+						<section class="first">
+							<i class="icon solid featured fa-image"></i>
+							<header>
+								<h2>1: Upload an image </h2>
+							</header>
+							<p>Browse the image you want to create meme with</p>
+						</section>
+					</div>
+					<div class="col-4 col-12-medium">
+						<section class="middle">
+							<i class="icon solid featured alt fa-code"></i>
+							<header>
+								<h2>Add Text</h2>
+							</header>
+							<p>Add a top and or bottom text to the image</p>
+						</section>
+					</div>
+					<div class="col-4 col-12-medium">
+						<section class="last">
+							<i class="icon solid featured fa-file"></i>
+							<header>
+								<h2>Generate Meme</h2>
+							</header>
+							<p>Once generated, right click on the image and save</p>
+						</section>
+					</div>
+				</div>
+				<footer>
+					<ul class="actions">
+						<li><a href="#creatememe" class="button large">Get Started</a></li>
+						<li><a href="#" class="button alt large">Learn More</a></li>
+					</ul>
+				</footer>
+			</section>
+
+		</section>
+
+		<!--Create Meme-->
+		<section id="main">
+			<div class="container" id="creatememe">
+				<header class="major">
+					<h2>CREATE MEME</h2>
+				</header>
+				<div class="row">
+					<div class="col-8 col-12-medium">
+						<article class="box post">
+							<h3>TOP TEXT</h3>
+							<textarea id="top-text" style="width: 800px; height: 42px;"></textarea>
+							<h1>Text size: <br /><input type="range" id="top-text-size-input" min="0.05" max="0.25"
+									value="0.15" step="0.01"
+									style="width: 800px; height: 12px; background-color:#0498C1"></h1>
+							<br />
+							<h3>BOTTOM TEXT</h3>
+							<textarea id="bottom-text" style="width: 800px; height: 42px;"></textarea>
+							<h1> Text size: <br /><input type="range" id="bottom-text-size-input" min="0.05" max="0.25"
+									value="0.15" step="0.01"
+									style="width: 800px; height: 12px; background-color:#0498C1"></h1>
+							<p><input class="" type="file" id="image-input" accept="image/*"></p>
+							<p><button id="generate-btn"  onclick="document.getElementById('download').style.display='inline';" class="button" >GENERATE MEME</button>
+							<br /><canvas style="display: block !important" id="meme-canvas" title="Right click -> " Save image as...""></canvas> 
+							<button id="download" class="button alt" style="display: none;" >DOWNLOAD MEME</button> 
+							<script src="assets/js/meme.js"></script>
+							
+						</article>
+					</div>
+					<div class="col-4 col-12-medium">
+						<!-- Sidebar -->
+						<section class="box">
+							<a href="#" class="image featured"><img src="images/meme-img.png" alt="" /></a>
+							<header>
+								<h3>Project Description</h3>
+							</header>
+							<p>This project is based on the meme generation that is been majorly seen in today’s social
+								media. The project is created by using HTML, CSS, Javascript/jQuery and images on which
+								the memes are created. <br /><br /></p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About / Contact Us -->
+		<section id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12" id="about" class="container">
+						<!-- About us -->
+						<section class="about">
+							<header class="major">
+								<h2>About Us</h2>
+							</header>
+							<div class="row">
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/jorich.jpg" alt="" /></a>
+										<header>
+											<h3>JORICH PONIO</h3>
+											<p>c0818858</p>
+										</header>
+										<p>I love to skate and play volleyball. I strum my ukulele when I feel lonely. I
+											love to travel and eat Ramen Noodles, Bread, and Soup. </p>
+									</section>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/arya.jpg" alt="" /></a>
+										<header>
+											<h3>ARYAMANGALA ARUVAYTHIL</h3>
+											<p>C0803246</p>
+										</header>
+										<p>I like to crack my brain on stuff and also get involved in physical
+											activities. I have a special interest in adventures, traveling around and
+											exploring different ways of life and beautiful places. Trying new things is
+											my second nature.</p>
+									</section>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/ronald.jpeg" alt="" /></a>
+										<header>
+											<h3>RONALD THOMAS</h3>
+											<p>C0843433</p>
+										</header>
+										<p>I love arts of all kinds, majorly sketches, and portraits and wish to learn
+											and work on that skill.</p>
+									</section>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/anjumol.jpeg" alt="" /></a>
+										<header>
+											<h3>ANJUMOL VEZHAVELIL PAULOSE</h3>
+											<p>C0844343</p>
+										</header>
+										<p>I enjoy reading books. In my spare time , I like to meet up with my friends
+											and family. Also , I enjoy spending time with my pets.Traveling is one of
+											the most happiest part for me.I am interested in photography too.</p>
+									</section>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/sharanya.jpeg" alt="" /></a>
+										<header>
+											<h3>SHARANYA PRAKASH</h3>
+											<p>C0836645</p>
+										</header>
+										<p>My passion is cooking and travelling....apart from this I read books and
+											listen to music whenever I feel stressed.Now I am learning coding and I am
+											interested in learning new things in software.</p>
+									</section>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href="#" class="image featured"><img src="images/nishantgupta.jpg" alt="" /></a>
+										<header>
+											<h3>NISHANT GUPTA</h3>
+											<p>Professor</p>
+										</header>
+										<p>My goal is to become a good academician and expert in my skill areas, a Professor in my lifetime and to involve myself in research areas of my domain.</p>
+									</section>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12" id="contact">
+						<!-- Contact Us -->
+						<section>
+							<header class="major">
+								<h2>Contac Us</h2>
+							</header>
+							<div>
+								<form id="memef-form-id" class="memef-form-class" method="post" action="#">
+									<div>
+										<label for="Name" class="memef-label">Your name</label>
+										<div class="memef-input-group">
+											<input type="text" id="Name" name="Name" class="memef-form-control"
+												required>
+										</div>
+									</div>
+
+									<div>
+										<label for="Email" class="memef-label">Your email address</label>
+										<div class="memef-input-group">
+											<input type="email" id="Email" name="Email" class="memef-form-control"
+												required>
+										</div>
+									</div>
+
+									<div>
+										<label for="Message" class="memef-label">Your message</label>
+										<div class="memef-input-group">
+											<textarea id="Message" name="Message" class="memef-form-control" rows="6"
+												maxlength="3000" required></textarea>
+										</div>
+									</div>
+
+									<div>
+										<button type="submit" id="memef-button"
+											class="memef-btn memef-btn-primary memef-btn-lg memef-btn-block">Send
+											Message</button>
+									</div>
+								</form>
+							</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</div>
+	</div>
+	</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a href="https://moodle.queenscollege.ca/moodle/?redirect=0" target="_blank"><img
+							src="images/news-banner.gif" width="100%">
+						<!-- Copyright -->
+						<div id="copyright">
+							<ul class="links">
+								<li>Copyright &copy; Meme Generator. A final project for Winter 2022.</li>
+								<li>Submitted by: Group #1</li>
+							</ul>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
