@@ -1,10 +1,6 @@
-/** Meme Generator Function - 
-   Submitted by Group #1: 
-    Jorich Ponio	C0818858
-    Anjumol Vezhavelil Paulose	C0844343
-    Aryamangala Aruvaythil	C0803246
-    Ronald Thomas	C0843433
-    Sharanya Prakash	C0836645 
+/** Meme Generator Function 
+ *  By: Jorich Ponio
+ *  Web: https://mccoolot.com
 **/
 
 let topTxt, bottomTxt, topTxtSize, bottomTxtSize, imgUpload, createMemeBtn, canvas, ctx;
